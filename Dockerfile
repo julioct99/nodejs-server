@@ -1,5 +1,5 @@
 # Using Node 10 as base image
-FROM node:10
+FROM node:14.9.0-stretch-slim
 
 # Create app directory
 WORKDIR /usr/src/app

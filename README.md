@@ -1,6 +1,6 @@
 # Node.js App Server
 
-Nginx container to serve static sites
+Nodejs container to serve Node apps
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1280px-Node.js_logo.svg.png" width="20%">
 
