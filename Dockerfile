@@ -1,5 +1,5 @@
-# Using Node 14.9 (alpine) as base image
-FROM node:14.9-alpine
+# Using Node 14.9 (slim) as base image
+FROM node:14.9-slim
 
 # Set the NODE_ENV variable to production mode
 ENV NODE_ENV production
