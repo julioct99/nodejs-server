@@ -1,5 +1,11 @@
-# Using Node 10 as base image
-FROM node:14.9.0-stretch-slim
+# Using Node 14.9 (alpine) as base image
+FROM node:14.9-alpine
+
+# Set the NODE_ENV variable to production mode
+ENV NODE_ENV production
+
+# Open port 8080
+EXPOSE 8080
 
 # Create app directory
 WORKDIR /usr/src/app
@@ -22,5 +28,5 @@ RUN npm install
 # Bundle app source
 COPY --chown=node:node ./app .
 
-EXPOSE 8080
-CMD [ "node", "app.js" ]
+# Run npm start script
+CMD [ "npm", "start" ]
